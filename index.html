@@ -20,10 +20,13 @@
                     </div>
                     <div class="col-sm text-sm-left">
                       <span class="quit">  
-                      <select>
-                        <option>Ar</option>
-                        <option>En</option>
-                      </select>  
+                        <nav>
+                      <ul>
+                        <li><a href="index.html"> <i class="fas fa-caret-down"></i> العربية</a>
+                        <ul><li><a href="lang/English.html">English</a></li></ul>
+                        </li>
+                      </ul> 
+                        </nav>
                       </span>
                     </div>
                 </div>
@@ -33,31 +36,31 @@
 
         <!--Start Navbar-->
 
-        <nav class="navbar navbar-expand-lg navbar-light text-left">
+        <nav class="navbar navbar-expand-lg navbar-light text-sm-right">
             <div class="container">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#who">من نحن؟!</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#feat">المشاريع</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#dona">التبرعات</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#cont"> تطوع معـنا <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Contactus">تواصل معـنا</a>
+                    </li>
+                </ul>
+              </div>
             <a class="navbar-brand" href="#"><img src="img/logo/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#who">من نحن؟!</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#feat">المشاريع</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#dona">التبرعات</a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#cont"> تطوع معـنا <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">تواصل معـنا</a>
-                  </li>
-              </ul>
-            </div>
            </div>
           </nav>
 
@@ -115,7 +118,7 @@
            <h2 class="h1">نشـأة المنظمة</h2>
            <p>انطلق العمل و التحضير لتأسيس و هيكلة نظام و اسس منظمة السمو الخيرية منذ سبتمبر 2013 حيث توالت الاجتماعات في تلك الفترة ما بين نادي الخريجين و منظمة الكوت الخيرية وكان اول انطلاق لمنظمة السمو الخيرية في السادس و العشرون من يناير 2014 و تمت اجازة اللوائح الاساسية للمنظمة و الغرض الاساسي من انشاءها هو محاربة الفقر و الضائقة المعيشية التي اهلكت الكثيرين من السودانيين</p>
            <h5>ايـد بي ايـد تجدع بعيـد</h5>
-           <button>قـراءة المزيـد</button>
+           <button><a href="https://www.facebook.com/alsmo.arab" target="_blank">قراة المزيـد</a></button>
          </div>
        </div> 
       <!--End overview-->
@@ -290,7 +293,7 @@
                         <li class="list-group-item">200 SDG</li>
                         <li class="list-group-item">100 SDG</li>
                       </ul>
-                      <a href="#"><i class="fa fa-phone card-link rounded-circle"></i></a>
+                      <a href="#" onclick="myFuncation()"><i class="fa fa-phone card-link rounded-circle"></i></a>
                     </div>
                   </div>
                 </div>
@@ -456,7 +459,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-4 text-center text-sm-right">
-                    <a href="#">تطـوع معنـا</a>
+                    <a href="New folder/form.html" target="_blank">تطـوع معنـا</a>
                   </div>
                   <div class="col-md-8 text-center text-sm-left">
                     <p>انضم الينا الان وكن سبب في فرحة الكثيرين</a>
@@ -475,7 +478,7 @@
                      <div class="site-info">
                       <h3><a class="lin" href="#">السمو الخيـرية</a></h3>
                       <p>تعد منظمة السمو الخيرية من المنظمات السودانية التي ولدت وبقوة من رحم المعاناة واحتلت مكانة بارزة في المجتمع السوداني لما لديها من العديد من المشاريع و البرامج التي تقدمها ساعية لتعميق قيم التكافل و الترابط .</p>
-                      <a href="#">قراة المزيـد</a>
+                      <a href="https://www.facebook.com/groups/643631319032974/" target="_blank">قراة المزيـد</a>
                      </div>
                    </div>
                    <div class="col-sm-6 col-lg-4">
@@ -485,16 +488,14 @@
                          <div class="col">
                            <ul class="list-unstyled">
                              <li>حول</li>
-                             <li>ملفات</li>
                              <li>الفريق</li>
-                             <li>سياسيةالخصوصية</li>
+                             <li><a href="https://policies.google.com/privacy?hl=ar" target="_blank">سياسيةالخصوصية</a></li>
                            </ul>
                          </div>
                          <div class="col">
                           <ul class="list-unstyled">
                             <li>التعليمات</li>
-                            <li>مقالات</li>
-                            <li>كيف تعمل</li>
+                            <li><a href="https://mawdoo3.com/%D9%85%D8%A7_%D9%87%D9%88_%D8%A7%D9%84%D8%B9%D9%85%D9%84_%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D8%B9%D9%8A" target="_blank">مقالات</a></li>
                             <li>تواصل معنا</li>
                           </ul>
                         </div>

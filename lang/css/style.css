@@ -16,13 +16,48 @@ body{
 .upper-bar{
     background-color: rgb(72, 212, 37);
     color: #fff;
+    padding-top: 10px;
     padding: 10px;
 }
 
 @media (max-width: 576px){
-   select .upper-bar .quit{
-        margin-top: 5px;
+    .quit nav ul li{
+        margin-top: 10px;
+        margin-bottom: 15px;
     }
+}
+
+.quit nav ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+
+.quit nav ul li a{
+    color: white;
+    display: block;
+    padding: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.quit nav ul ul{
+    position: absolute;
+    top: 28px; 
+    right: 13px;
+    display: none;
+}
+
+nav ul li:hover > ul{
+    display: block;
+    border-radius: 10px solid rgb(53, 51, 51);
+}
+
+.quit nav ul li a:hover{
+    background-color: rgb(53, 51, 51);
 }
 
 /*End uppbar*/
@@ -32,14 +67,19 @@ body{
 .navbar-nav .nav-link{
     font-size: 16px;
     position: relative;
-    left: 280px;
-    margin-left: 20px;;
+    margin-right: 20px;;
     color: #08526d;
     font-weight: bold;
 }
 
 .navbar-nav .active > .nav-link{
     color: rgb(72, 212, 37) !important;
+}
+
+@media (max-width: 576px){
+    .navbar-nav .nav-link{
+        
+    }
 }
 
 /*End navbar*/
@@ -194,11 +234,12 @@ body{
     margin-bottom: 35px;
 }
 
-.overview button{
+.overview button a{
     background-color: rgb(72, 212, 37);
     color: #fff;
     padding: 10px 20px;
     font-size: 20px;
+    text-decoration: none;
     font-weight: bold;
     border: 2px solid #fff;
     border-radius: 10px;
@@ -671,7 +712,7 @@ h2{
     color: rgb(72, 212, 37);
     border: 2px solid rgb(72, 212, 37);
     list-style: none;
-}
+}   
 
 /* End Contact us */
 
