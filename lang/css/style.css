@@ -491,6 +491,98 @@ nav ul li:hover > ul{
      background-color: rgb(72, 212, 37);
  }
 
+ /* Start drop 1 */
+
+ .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li{
+    color: #08526d;
+    margin-left: 120px;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content
+li:hover{
+color: rgb(53, 51, 51);
+}
+
+.show{
+    display: block;
+}
+
+/* end drop 1 */
+
+/* Start drop 2 */
+
+.dropdown-contentS{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-contentS li{
+    color: #08526d;
+    margin-left: 75px;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-contentS
+li:hover{
+color: rgb(53, 51, 51);
+}
+
+.showS{
+    display: block;
+}
+
+/* end drop 2 */
+
+/* start drop 3 */
+
+.dropdown-contents{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-contents li{
+    color: #08526d;
+    margin-left: 100px;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-contents
+li:hover{
+color: rgb(53, 51, 51);
+}
+
+.shows{
+    display: block;
+}
+
+/* end drop 3 */
+
+ /* End donations */
+
  /* End donations */
 
  /* Start who us */

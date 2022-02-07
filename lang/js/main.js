@@ -21,3 +21,48 @@ $(function (){
    });
 
 });
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+      }
+    }
+  }
+
+  function myFunctions() {
+    document.getElementById("myDropdowns").classList.toggle("shows");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtns')) {
+      var dropdowns = document.getElementsByClassName("dropdown-contents");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+      }
+    }
+  }
+
+  function myFunctionS() {
+    document.getElementById("myDropdownS").classList.toggle("showS");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtnS')) {
+      var dropdowns = document.getElementsByClassName("dropdown-contentS");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+      }
+    }
+  }
