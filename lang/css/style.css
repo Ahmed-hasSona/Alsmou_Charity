@@ -189,6 +189,7 @@ nav ul li:hover > ul{
 
 .features p{
     color: rgb(53, 51, 51);
+    text-align: left;
     margin-bottom: 40px;
 }
 /*End features*/
@@ -217,6 +218,7 @@ nav ul li:hover > ul{
     line-height: 2;
     font-size: 20px;
     width: 80%;
+    text-align: left;
     margin: 0 auto 15px;
     color: #6a6a6a;
 }
@@ -264,6 +266,7 @@ nav ul li:hover > ul{
     line-height: 1.6;
     font-size: 25px;
     width: 80%;
+    text-align: left;
     margin: 0 auto 15px;
     color: #6a6a6a;
 }
@@ -326,7 +329,6 @@ nav ul li:hover > ul{
      font-weight: bold;
      margin-bottom: 20px;
  }
- 
 
  .last-posts .card {
      margin-bottom: 30px;
@@ -349,6 +351,7 @@ nav ul li:hover > ul{
      font-weight: bold;
  }
 
+
 /* End Last Posts */
 
 /* Start cases */
@@ -369,15 +372,16 @@ nav ul li:hover > ul{
      margin-top: 10px;
  }
 
+
  .cases .card img{
      max-width: 350px;
      max-height: 260px;
  }
 
- @media(max-width: 578px){
-    .cases .card img{
-        max-width: 100%;
-    }
+ @media (max-width: 576px){
+     .cases .card img{
+         max-width: 100%;
+     }
  }
 
  .cases .card .card-title{
@@ -808,12 +812,6 @@ h2{
 
 /* start Form */
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins' , sans-serif;
-    box-sizing: border-box;
-}
 
 .hero{
     width: 100%;
@@ -828,7 +826,7 @@ h2{
 form{
     width: 90%;
     position: absolute;
-    bottom: 110px;
+    bottom: 30px;
     max-width: 600px;
 }
 
@@ -864,6 +862,49 @@ input , textarea{
 .input-group label i{
     margin-right: 4px;
 }
+
+form .city-details .city-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+  }
+  
+  form .city-details .categorys{
+    display: flex;
+    width: 100%;
+    margin: 14px 0;
+  }
+  
+  .city-details .categorys label{
+     display: flex;
+     align-items: center;
+     color: #fff;
+     font-weight: bold;
+     margin-left: 10px;
+  }
+  
+  .city-details .categorys .Dot{
+    height: 18px;
+    width: 18px;
+    background: white;
+    border-radius: 50%;
+    margin-right: 7px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+
+  }
+  
+  #Dot-1:checked ~ .categorys label .One,
+  #Dot-2:checked ~ .categorys label .Tow,
+  #Dot-3:checked ~ .categorys label .Three{
+    border-color: white;
+    background: rgb(72, 212, 37);
+  }
+  
+  form input[type="radio"]{
+    display: none;
+  }
+
 
 form .gender-details .gender-title{
     font-size: 20px;

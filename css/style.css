@@ -190,6 +190,7 @@ nav ul li:hover > ul{
 .features p{
     color: rgb(53, 51, 51);
     margin-bottom: 40px;
+    text-align: right;
 }
 /*End features*/
 
@@ -217,6 +218,7 @@ nav ul li:hover > ul{
     line-height: 2;
     font-size: 20px;
     width: 80%;
+    text-align: right;
     margin: 0 auto 15px;
     color: #6a6a6a;
 }
@@ -264,6 +266,7 @@ nav ul li:hover > ul{
     line-height: 1.6;
     font-size: 20px;
     width: 80%;
+    text-align: right;
     margin: 0 auto 15px;
     color: #6a6a6a;
 }
@@ -372,12 +375,6 @@ nav ul li:hover > ul{
  .cases .card img{
      max-width: 350px;
      max-height: 260px;
- }
-
- @media(max-width: 578px){
-    .cases .card img{
-        max-width: 100%;
-    }
  }
 
  .cases .card .card-title{
@@ -806,15 +803,6 @@ h2{
 
 /* Form */
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins' , sans-serif;
-    box-sizing: border-box;
-}
-
-
-
 .hero{
     width: 100%;
     background-color:#08526d;
@@ -828,7 +816,7 @@ h2{
 form{
     width: 90%;
     position: absolute;
-    bottom:  110px;
+    bottom: 30px;
     max-width: 600px;
 }
 
@@ -864,6 +852,49 @@ input , textarea{
 .input-group label i{
     margin-left: 4px;
 }
+
+form .city-details .city-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+  }
+  
+  form .city-details .categorys{
+    display: flex;
+    width: 100%;
+    margin: 14px 0;
+  }
+  
+  .city-details .categorys label{
+     display: flex;
+     align-items: center;
+     color: #fff;
+     font-weight: bold;
+     margin-right: 10px;
+  }
+  
+  .city-details .categorys .Dot{
+    height: 18px;
+    width: 18px;
+    background: white;
+    border-radius: 50%;
+    margin-left: 7px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+
+  }
+  
+  #Dot-1:checked ~ .categorys label .One,
+  #Dot-2:checked ~ .categorys label .Tow,
+  #Dot-3:checked ~ .categorys label .Three{
+    border-color: white;
+    background: rgb(72, 212, 37);
+  }
+  
+  form input[type="radio"]{
+    display: none;
+  }
+
 
 form .gender-details .gender-title{
     font-size: 20px;
