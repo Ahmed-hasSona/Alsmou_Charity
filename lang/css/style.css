@@ -7,6 +7,10 @@
  Link SmoAlkhirea https://www.facebook.com/alsmo.arab/;
 */
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     text-align: left !important;
 }
@@ -67,7 +71,7 @@ nav ul li:hover > ul{
 .navbar-nav .nav-link{
     font-size: 16px;
     position: relative;
-    margin-right: 20px;;
+    margin-right: 20px;
     color: #08526d;
     font-weight: bold;
 }
@@ -76,11 +80,6 @@ nav ul li:hover > ul{
     color: rgb(72, 212, 37) !important;
 }
 
-@media (max-width: 576px){
-    .navbar-nav .nav-link{
-        
-    }
-}
 
 /*End navbar*/
 
@@ -779,6 +778,13 @@ h2{
     font-size: 22px;
 }
 
+
+@media (max-width: 576px){
+    .contact-us{
+        padding: 120px 0;
+    }
+}
+
 @media (max-width: 768px){
     .contact-us{
         font-size: 18px;
@@ -955,13 +961,13 @@ textarea:valid~label{
     font-size: 14px;
 }
 
-.row{
+.rows{
         display: flex;
         align-items: center;
         justify-content: space-between;
 }
 
-.row .input-group{
+.rows .input-group{
     flex-basis: 48%;
 }
 
@@ -978,6 +984,34 @@ form button{
 
 form button i{
     margin-right: 5px;
+}
+
+.hero .gmap_canvas{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+@media (max-width: 578px){
+    .hero .gmap_canvas{
+        padding: 0 10px;
+    }
+}
+
+.heros p{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    top: 5px;
+    padding: 0 5px 20px 5px;
+    color: white;
+    background-color:#08526d;
+}
+
+@media (max-width: 578px){
+    .heros p{
+        text-align: left;
+        padding: 0 5px 10px 5px;
+    }
 }
 
 /* End Form */
