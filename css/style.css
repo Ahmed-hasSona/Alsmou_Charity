@@ -34,7 +34,6 @@ body{
     position: relative;
     list-style: none;
     display: inline-block;
-
 }
 
 .quit nav ul li a{
@@ -51,6 +50,13 @@ body{
     top: 28px; 
     left: 0;
     display: none;
+}
+
+@media(max-width: 578px){
+    .quit nav ul ul {
+        position: absolute;
+        top: 20px;
+    }
 }
 
 nav ul li:hover > ul{
@@ -379,6 +385,12 @@ nav ul li:hover > ul{
      max-width: 350px;
      max-height: 260px;
  }
+
+ @media (max-width: 576px){
+    .cases .card img{
+        max-width: 100%;
+    }
+}
 
  .cases .card .card-title{
      font-size: 20px;
@@ -970,6 +982,7 @@ form button{
     outline: none;
     background: transparent;
     border: 1px solid #fff;
+    border-radius: 5px;
     font-size: 17px;
     font-weight: bold;
     width: 100%;
@@ -980,10 +993,17 @@ form button i{
     margin-left: 4px;
 }
 
+@media (max-width: 578px){
+    .hero .mapouter{
+        left: 81px;
+    }
+}
+
 .hero .gmap_canvas{
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
+
 
 .heros p{
     width: 100%;
