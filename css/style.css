@@ -564,6 +564,10 @@ color: rgb(53, 51, 51);
 
 /* start drop 3 */
 
+.card-body img{
+    margin: 0px 0px 32px 0px;
+}
+
 .dropdown-contents{
     display: none;
     position: absolute;

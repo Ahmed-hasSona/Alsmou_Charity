@@ -571,6 +571,10 @@ color: rgb(53, 51, 51);
     z-index: 1;
 }
 
+.card-body img{
+    margin: 0px 0px 32px 0px;
+}
+
 .dropdown-contents li{
     color: #08526d;
     margin-left: 100px;
@@ -990,6 +994,12 @@ form button{
 
 form button i{
     margin-right: 5px;
+}
+
+@media (max-width: 578px){
+    .hero .mapouter{
+        right: 81px;
+    }
 }
 
 .hero .gmap_canvas{
