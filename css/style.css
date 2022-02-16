@@ -816,10 +816,12 @@ h2{
     border: 2px solid #fff;
     padding: 6px 15px 8px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .contact-us a:hover{
     color: rgb(72, 212, 37);
+    text-decoration: underline;
     border: 2px solid rgb(72, 212, 37);
     list-style: none;
 }

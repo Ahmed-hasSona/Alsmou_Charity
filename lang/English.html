@@ -471,7 +471,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-4 text-center text-sm-left">
-                    <a href="#" target="_blank">Volunteer with us</a>
+                    <a onclick="show_hide()">Volunteer with us</a>
                   </div>
                   <div class="col-md-8 text-center text-sm-right">
                     <p>Join us now and be the reason for the joy of many</a>
@@ -483,11 +483,11 @@
            <!--End Contact-us-->
 
             <!-- start Form-->
-            <div class="hero">
-              <form>
+            <div class="hero" id="show">
+              <form action="php/index.php" method="POST">
                   <div class="rows">
                   <div class="input-group">
-                      <input type="text" id="name" required>
+                      <input type="text" name="name" id="name" required>
                       <label for="name"> <i class="fas fa-user"></i> Your Name</label>
                   </div>
                <div class="input-group">
@@ -506,7 +506,7 @@
              </div>
            </div>
                <div class="input-group">
-               <textarea id="mesg" rows="8" required></textarea>
+               <textarea id="mesg" name="message" rows="8" required></textarea>
                <label for="mesg"><i class="fas fa-comments"></i>Message</label>
                </div>
        
@@ -532,8 +532,8 @@
            </div> 
 
               <div class="gender-details">
-               <input type="radio" name="gender" id="dot-1">
-               <input type="radio" name="gender" id="dot-2">
+               <input type="radio" name="gender" value="male" id="dot-1">
+               <input type="radio" name="gender" value="female" id="dot-2">
            <span class="gender-title">gender</span>
            <div class="category">
                <label for="dot-1">

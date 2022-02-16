@@ -814,6 +814,7 @@ h2{
 .contact-us a{
     color: #fff;
     border: 2px solid #fff;
+    cursor: pointer;
     padding: 6px 15px 8px;
     font-weight: bold;
 }
