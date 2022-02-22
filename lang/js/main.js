@@ -79,3 +79,96 @@ function myFunction() {
       return a=1;
     }
   }
+
+  // Form Restrictions
+
+  $(function () {
+
+    'use strict';
+
+     var userError = true,
+
+         emailError = true,
+        
+         msgError = true;
+
+         phone = true;
+
+         village = true;
+
+     function checkError(){
+
+        if(userError === true || emailError === true || msgError === true || phone === true || village == true){
+            console.log('This Form is Wrong');
+        }
+        
+        else{
+            console.log('This Form Success');
+        }
+     }
+
+     checkError();
+
+    $('.name').blur(function() {
+
+        if($(this).val().length < 4){
+            $(this).css('border','1px solid #f00');
+            userError = true;
+        }else{
+            $(this).css('border', '1px solid #fff');
+            userError = false;
+        }
+
+        checkError();
+    });
+
+    $('.email').blur(function() {
+
+        if($(this).val().length < 5){
+            $(this).css('border','1px solid #f00');
+            emailError = true;
+        }else{
+            $(this).css('border', '1px solid #fff');
+            emailError = false;
+        }
+
+        checkError();
+    });
+
+    $('.mess').blur(function(){
+
+        if($(this).val().length < 10){
+            $(this).css('border','1px solid #f00');
+            msgError = true;
+        }else{
+            $(this).css('border','1px solid #fff');
+            msgError = false;
+        }
+        checkError();
+    });
+
+    $('.vill').blur(function(){
+
+      if($(this).val().length < 3){
+          $(this).css('border','1px solid #f00');
+          msgError = true;
+      }else{
+          $(this).css('border','1px solid #fff');
+          msgError = false;
+      }
+      checkError();
+  });
+
+  $('.phone').blur(function(){
+
+    if($(this).val().length < 10){
+        $(this).css('border','1px solid #f00');
+        msgError = true;
+    }else{
+        $(this).css('border','1px solid #fff');
+        msgError = false;
+    }
+    checkError();
+});
+
+});
