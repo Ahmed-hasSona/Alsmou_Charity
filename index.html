@@ -285,19 +285,19 @@
                     <div class="card-body">
                       <h4 class="card-title">تبرع قليل</h4>
                       <h6 class="card-subtitle mb-2 text-muted">جنيهك بفرق</h6>
-                      <p class="card-text">500<span>SDG</span></p>
+                      <p class="card-text">1000<span>SDG</span></p>
                       <ul class="list-group list-group-flush">
-                        <li class="list-group-item">500 SDG</li>
-                        <li class="list-group-item">400 SDG</li>
-                        <li class="list-group-item">300 SDG</li>
-                        <li class="list-group-item">200 SDG</li>
-                        <li class="list-group-item">100 SDG</li>
+                        <li class="list-group-item">1000 SDG</li>
+                        <li class="list-group-item">900 SDG</li>
+                        <li class="list-group-item">800 SDG</li>
+                        <li class="list-group-item">700 SDG</li>
+                        <li class="list-group-item">700 SDG</li>
                       </ul>
                       <i onclick="myFunction()" class="dropbtn fa fa-phone card-link rounded-circle"></i>
                       <div id="myDropdown" class="dropdown-content">
-                        <li>0996514086</li>
-                        <li>0996514086</li>
-                        <li>0996514086</li>
+                        <li>0999013616</li>
+                        <li>0122627110</li>
+                        <li>0908505058</li>
                     </div>
                     </div>
                   </div>
@@ -310,13 +310,13 @@
                         <div class="card-body">
                           <h4 class="card-title">تبرع عالي</h4>
                           <h6 class="card-subtitle mb-2 text-muted">جنيهك بفرق</h6>
-                          <p class="card-text">1000<span>SDG</span></p>
+                          <p class="card-text">50<span>$</span></p>
                           <ul class="list-group list-group-flush">
-                            <li class="list-group-item">1000 SDG</li>
-                            <li class="list-group-item">900 SDG</li>
-                            <li class="list-group-item">800 SDG</li>
-                            <li class="list-group-item">700 SDG</li>
-                            <li class="list-group-item">600 SDG</li>
+                            <li class="list-group-item">50 $</li>
+                            <li class="list-group-item">40 $</li>
+                            <li class="list-group-item">30 $</li>
+                            <li class="list-group-item">20 $</li>
+                            <li class="list-group-item">10 $</li>
                           </ul>
                           <i onclick="myFunctionS()" class="dropbtnS fab fa-paypal card-link rounded-circle"></i>
                           <div id="myDropdownS" class="dropdown-contentS">
@@ -343,7 +343,7 @@
                         </ul>
                         <img src="img/logo/IMG-20220213-WA0000.png" onclick="myFunctions()" class="dropbtns"  alt="Bankak">
                         <div id="myDropdowns" class="dropdown-contents">
-                          <li>رقم الحساب 161902</li>
+                          <li>رقم الحساب 1376318</li>
                       </div>
                       </div>
                     </div>
@@ -483,30 +483,31 @@
 
            <!--form-->
            <div class="hero" id="show">
-            <form>
-                <div class="rows">
+            <form action="php/index.php" method="POST">
+              <div class="rows">  
                 <div class="input-group">
-                    <input type="text" class="name" id="name" required>
+                    <input type="text" name="name" class="name" id="name" required>
                     <label for="name"> <i class="fas fa-user"></i> ادخـل اسمك</label>
                 </div>
-             <div class="input-group">
-                 <input type="number" class="phone" id="phone" required>
+               <div class="input-group">
+                 <input type="number" name="phone" class="phone" id="phone" required>
                  <label for="phone"><i class="fas fa-phone-square-alt"></i> رقم الهاتف </label>
-             </div>
-         </div>
+               </div>
+            </div>
+            
          <div class="rows">
             <div class="input-group">
-             <input type="email" class="email" id="email" required>
+             <input type="email" name="email" class="email" id="email" required>
              <label for="email"><i class="fas fa-envelope"></i> الايميل</label>
            </div>
            <div class="input-group">
-             <input type="text" class="vill" id="village" name="village" required>
+             <input type="text" name="village" class="vill" id="village" name="village" required>
              <label for="village"><i class="fas fa-map-marker-alt"></i></i>الحي</label>
            </div>
          </div>
 
              <div class="input-group">
-             <textarea id="mesg" rows="8" class="mess" required></textarea>
+             <textarea id="mesg" name="message" rows="8" class="mess" required></textarea>
              <label for="mesg"><i class="fas fa-comments"></i>ارسل لنا رسالة</label>
             </div>
 
@@ -532,8 +533,8 @@
          </div> 
 
             <div class="gender-details">
-             <input type="radio" name="gender" id="dot-1">
-             <input type="radio" name="gender" id="dot-2">
+             <input type="radio" name="gender" name="male" id="dot-1">
+             <input type="radio" name="gender" name="female" id="dot-2">
          <span class="gender-title">الجنس</span>
          <div class="category">
              <label for="dot-1">
