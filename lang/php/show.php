@@ -1,7 +1,7 @@
 
 <?php
-
-include 'connect.php'; ?>
+include 'connect.php';
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +13,7 @@ include 'connect.php'; ?>
     <title>Smou</title>
 </head>
 <body>
+  
     <div class="container">
     <table class="table m-3">
   <thead>
@@ -66,3 +67,4 @@ include 'connect.php'; ?>
     </div>
 </body>
 </html>
+

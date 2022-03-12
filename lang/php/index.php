@@ -1,5 +1,5 @@
 <?php
-
+$id = filter_var($_POST['id'], FILTER_SANITIZE_NUMBER_INT);
 $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
 $phone = filter_var($_POST['phone'], FILTER_SANITIZE_NUMBER_INT);
 $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
@@ -19,10 +19,14 @@ if($conn->connect_error){
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO vollunteer (Name, Phone, Email, Village, Message, City, Gender) VALUES ('$name', '$phone', '$email', '$village', '$message', '$city', '$gender')";
+$sql = "INSERT INTO vollunteer (id, Name, Phone, Email, Village, Message, City, Gender) VALUES ('$id', '$name', '$phone', '$email', '$village', '$message', '$city', '$gender')";
 
 if($conn->query($sql) == True){
-    header("location:../English.html");
+  
+    echo "<script type='text/javascript'>alert('Sumbit Successfuly')</script>";
+    echo "<script> window.location.assign('../English.html'); </script>";
+    
+    
 }
 
 else{
@@ -30,3 +34,4 @@ else{
 }
 
 $conn->close();
+?>

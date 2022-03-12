@@ -19,12 +19,14 @@ if($conn->connect_error){
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO volunteer (id, Name, Phone, Email, Village, Message, City, Gender) VALUES ('$id', '$name', '$phone', '$email', '$village', '$message', '$city', '$gender')";
+$sql = "INSERT INTO vollunteer (id, Name, Phone, Email, Village, Message, City, Gender) VALUES ('$id', '$name', '$phone', '$email', '$village', '$message', '$city', '$gender')";
 
 if($conn->query($sql) == True){
-    echo "<script type='text/javascript'>alert('تم التسجيل بنجاح')";
-    echo "</script>";
-    header("location:../index.html");
+  
+    echo "<script type='text/javascript'>alert('Sumbit Successfuly')</script>";
+    echo "<script> window.location.assign('../English.html'); </script>";
+    
+    
 }
 
 else{
@@ -32,3 +34,4 @@ else{
 }
 
 $conn->close();
+?>
