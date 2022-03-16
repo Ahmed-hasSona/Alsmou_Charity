@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Login</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
     	      action="php/login.php" 
     	      method="post">
 
-    		<h4 class="display-4  fs-1">LOGIN</h4><br>
+    		<h4 class="display-4 text-center fs-1">LOGIN</h4><br>
     		<?php if(isset($_GET['error'])){ ?>
     		<div class="alert alert-danger" role="alert">
 			  <?php echo $_GET['error']; ?>

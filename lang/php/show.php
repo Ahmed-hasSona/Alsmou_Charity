@@ -10,12 +10,96 @@ include 'connect.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.css">
-    <title>Smou</title>
+    <title>Volunteer Data</title>
+
+    <style>
+      .upper-bar{
+    padding-top: 10px;
+    padding: 10px;
+}
+
+.upper-bar .re a{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 576px){
+    .quit nav ul li{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+.quit nav ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.quit nav ul li a{
+    color: black;
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 30px;
+  }
+
+.quit nav ul ul{
+    position: absolute;
+    top: 28px; 
+    right: 13px;
+    display: none;
+}
+
+@media(max-width: 578px){
+    .quit nav ul ul {
+        position: absolute;
+        top: 20px;
+    }
+}
+
+nav ul li:hover > ul{
+    display: block;
+    border-radius: 10px solid rgb(53, 51, 51);
+}
+
+.quit nav ul li a:hover{
+   color: red;
+}
+    </style>
+
 </head>
 <body>
+<div class="upper-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm text-sm-left">
+                      <div class="re">
+                      <a href="logout.php" class="btn btn-warning ml-3">Logout</a>
+                        </div>
+                    </div>
+                    <div class="col-sm text-sm-right">
+                      <span class="quit">  
+                        <nav>
+                          <ul>
+                            <li><a href="#">English <i class="fas fa-caret-down"></i></a>
+                            <ul><li><a href="../../php/show.php">العربية</a></li></ul>
+                            </li>
+                          </ul> 
+                            </nav>  
+                      </span>
+                    </div>
+                </div>
+            </div>
+        </div>
   
     <div class="container">
-    <table class="table m-3">
+    <table class="table m-3 text-center">
   <thead>
     <tr>
       <th scope="col">id</th>

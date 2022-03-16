@@ -25,19 +25,9 @@ body{
 
 .upper-bar .re a{
     font-size: 18px;
-    color: #fff;
-    margin-top: 10px;
+    color: white;
     font-weight: bolder;
-}
-
-.upper-bar .re a:hover{
-    color: #08526d;
-}
-
-@media (max-width: 576px){
-    .upper-bar .re{
-        padding-top: 10px;
-    }
+    text-decoration: none;
 }
 
 @media (max-width: 576px){
@@ -81,7 +71,7 @@ nav ul li:hover > ul{
 }
 
 .quit nav ul li a:hover{
-    background-color: rgb(53, 51, 51);
+    color: #ed1d24;
 }
 
 /*End uppbar*/
@@ -481,6 +471,10 @@ nav ul li:hover > ul{
  .donations .list-group-item{
      border: none;
  }
+
+.donations ul li .list-group-item{
+    margin-right: 30px;
+}
 
  .donations .card .card-link{
      background-color: rgb(72, 212, 37);
@@ -1099,6 +1093,10 @@ form button i{
     color: #08526d;
 }
 
+.footer .helpful-links ul li a:hover{
+    color: rgb(72, 212, 37);
+}
+
 .footer .contact h3{
     margin-bottom: 35px;
     margin-top: 11px;
@@ -1108,6 +1106,14 @@ form button i{
 
 .footer .contact ul li{
     margin-bottom: 10px;
+}
+
+.footer .contact ul li:hover{
+    color: rgb(72, 212, 37);
+}
+
+.footer .contact ul li a:hover{
+    color: rgb(72, 212, 37);
 }
 
 .footer .helpful-links h3
