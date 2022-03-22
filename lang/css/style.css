@@ -746,6 +746,8 @@ h2{
 
  .testimonilas .carousel-caption img{
      margin-bottom: 25px;
+     border:1px solid black;
+     border-radius: 10%;
  }
 
  .testimonilas .carousel-caption h3{
@@ -802,7 +804,7 @@ h2{
 
 @media (max-width: 576px){
     .contact-us{
-        padding: 120px 0;
+        padding: 50px 0;
     }
 }
 
@@ -850,6 +852,21 @@ h2{
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.hero::after{
+    width: 100%;
+    background-color: #08526d;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#show{
+    display: none;
+    align-items: center;
 }
 
 form{
@@ -1115,7 +1132,8 @@ form button i{
     margin-bottom: 7px;
 }
 
-.footer .contact ul li:hover{
+.footer .contact ul li a:hover{
+        
     color: rgb(72, 212, 37);
 }
 

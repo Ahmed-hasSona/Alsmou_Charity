@@ -67,17 +67,8 @@ function myFunction() {
     }
   }
 
-  var a;
   function show_hide(){
-    if(a==1){
       document.getElementById("show").style.display="block";
-      return a=0;
-    }
-
-    else{
-      document.getElementById("show").style.display="none";
-      return a=1;
-    }
   }
 
   // Form Restrictions

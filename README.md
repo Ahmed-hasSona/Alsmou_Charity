@@ -1,6 +1,9 @@
 # Alsmou_Charity
 AlSmou Charitable Organization (Welcomes on Readme Fille).
 
+# Instructions
+
+
 # Team work 
 1- Adnani Muhammed (Graphik Desgin Motion and photoshop).
 2- Mwoda Muhammed Salih(Graphik Desgin Photoshop 3D max).

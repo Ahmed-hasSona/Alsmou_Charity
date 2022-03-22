@@ -23,8 +23,8 @@ $sql = "INSERT INTO volunteer (id, Name, Phone, Email, Village, Message, City, G
 
 if($conn->query($sql) == True){
   
-    echo "<script type='text/javascript'>alert('Sumbit Successfuly')</script>";
-    echo "<script> window.location.assign('../index.html'); </script>";
+    echo "<script type='text/javascript'>alert('تم التسجيل بنجاح سنتواصل معك في أقرب فرصة')</script>";
+    echo "<script> window.location.assign('../index.html#cont'); </script>";
     
     
 }

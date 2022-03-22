@@ -26,7 +26,7 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
-  // Close the dropdown menu if the user clicks outside of it
+  // Show Elments Donation 1
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -41,7 +41,7 @@ function myFunction() {
     document.getElementById("myDropdowns").classList.toggle("shows");
   }
   
-  // Close the dropdown menu if the user clicks outside of it
+  // Show Elments Donation 2
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtns')) {
       var dropdowns = document.getElementsByClassName("dropdown-contents");
@@ -56,7 +56,7 @@ function myFunction() {
     document.getElementById("myDropdownS").classList.toggle("showS");
   }
   
-  // Close the dropdown menu if the user clicks outside of it
+  // Show Elments Donation 3
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtnS')) {
       var dropdowns = document.getElementsByClassName("dropdown-contentS");
@@ -67,19 +67,11 @@ function myFunction() {
     }
   }
 
-  var a;
+  // Funcation To show Form Volunteer
   function show_hide(){
-    if(a==1){
       document.getElementById("show").style.display="block";
-      return a=0;
-    }
-
-    else{
-      document.getElementById("show").style.display="none";
-      return a=1;
-    }
-
   }
+
 
     // Form Restrictions
 
